@@ -11,5 +11,7 @@
 <button (click)="addItem(newItem.value)">Adicionar</button>
 
 <ul>
-  <li *ngFor="let item of allItems">{{item.descricao}}</li>
+  <li *ngFor="let item of allItems">
+    <app-item (remove)="removeItem(item)" [item]="item"></app-item>
+  </li>
 </ul>

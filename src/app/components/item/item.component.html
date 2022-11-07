@@ -1,0 +1,11 @@
+<div class="item">
+  <input
+    [id]="item.descricao"
+    type="checkbox"
+    (change)="item.feito = !item.feito"
+    [checked]="item.feito"
+  />
+  <label [for]="item.descricao">{{item.descricao}}</label>
+
+  <button (click)="remove.emit()"></button>
+</div>
