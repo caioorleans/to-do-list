@@ -1,17 +1,19 @@
-<h1>To Do List</h1>
-<h2>O quê você gostaria de fazer hoje?</h2>
+<div class="container">
+  <h1>To Do List</h1>
+  <h2>O quê você gostaria de fazer hoje?</h2>
 
-<input
-  #newItem
-  placeholder="Adicione um item"
-  (keyup.enter)="addItem(newItem.value);
-  newItem.value=''"
-  id="addItemInput"
-/>
-<button (click)="addItem(newItem.value)">Adicionar</button>
+  <div class="input">
+    <input
+      #newItem
+      placeholder="Adicione um item"
+      (keyup.enter)="addItem(newItem.value); newItem.value=''"
+      id="addItemInput" />
+    <button (click)="addItem(newItem.value)">Adicionar</button>
+  </div>
 
-<ul>
-  <li *ngFor="let item of allItems">
-    <app-item (remove)="removeItem(item)" [item]="item"></app-item>
-  </li>
-</ul>
+  <ul>
+    <li *ngFor="let item of allItems">
+      <app-item (remove)="removeItem(item)" [item]="item"></app-item>
+    </li>
+  </ul>
+</div>
