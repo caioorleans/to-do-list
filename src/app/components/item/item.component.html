@@ -1,11 +1,15 @@
-<div class="item">
-  <input
+<div class="container__item">
+  <div class="container__checkbox">
+    <input
     [id]="item.descricao"
     type="checkbox"
     (change)="item.feito = !item.feito"
     [checked]="item.feito"
-  />
-  <label [for]="item.descricao">{{item.descricao}}</label>
+    />
+    <label [for]="item.descricao" [ngClass]="item.feito ? 'item-feito' : ''">{{item.descricao}}</label>
+  </div>
 
-  <button (click)="remove.emit()"></button>
+  <div class="container__delete-button">
+      <img (click)="remove.emit()" src="https://cdn-icons-png.flaticon.com/512/126/126468.png">
+  </div>
 </div>

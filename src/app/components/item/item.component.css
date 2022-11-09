@@ -1,0 +1,54 @@
+.container__item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container__checkbox{
+  width:100%;
+  min-height: 30px;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.container__checkbox input{
+  margin: 0 10px;
+}
+
+.container__checkbox label{
+  background-color: transparent;
+  color:black;
+  font-weight: bold;
+}
+
+.item-feito{
+  font-weight: 100;
+  text-decoration: line-through;
+}
+
+.container__delete-button{
+  width: 40px;
+  height:40px;
+  background-color: white;
+  margin-left: 10px;
+  padding:5px;
+  border-radius: 30px;
+}
+
+.container__delete-button:hover{
+  background-color: red;
+}
+
+.container__delete-button img{
+  background-color: transparent;
+  width: 100%;
+}
+

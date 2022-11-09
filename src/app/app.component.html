@@ -2,13 +2,13 @@
   <h1>To Do List</h1>
   <h2>O quê você gostaria de fazer hoje?</h2>
 
-  <div class="input">
+  <div class="container__input">
     <input
       #newItem
       placeholder="Adicione um item"
       (keyup.enter)="addItem(newItem.value); newItem.value=''"
       id="addItemInput" />
-    <button (click)="addItem(newItem.value)">Adicionar</button>
+    <button (click)="addItem(newItem.value); newItem.value = ''">Adicionar</button>
   </div>
 
   <ul>
