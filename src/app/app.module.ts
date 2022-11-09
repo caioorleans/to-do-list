@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ItemComponent } from './components/item/item.component';
+import { StorageService } from './services/storage.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { ItemComponent } from './components/item/item.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    StorageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
