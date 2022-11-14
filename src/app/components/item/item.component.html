@@ -3,8 +3,8 @@
     <input
     [id]="item.descricao"
     type="checkbox"
-    (change)="item.feito = !item.feito"
     [checked]="item.feito"
+    (click)="updateItemValor()"
     />
     <label [for]="item.descricao" [ngClass]="item.feito ? 'item-feito' : ''">{{item.descricao}}</label>
   </div>

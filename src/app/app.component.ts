@@ -49,6 +49,11 @@ export class AppComponent {
     this.saveList();
   }
 
+  updateItem(item:Item){
+    this.allItems[this.allItems.indexOf(item)].feito = item.feito;
+    this.saveList();
+  }
+
   removeItem(item:Item){
     this.allItems.splice(this.allItems.indexOf(item),1);
     this.saveList();

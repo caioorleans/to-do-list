@@ -15,5 +15,10 @@ export class ItemComponent implements OnInit {
 
   @Input() item!: Item;
   @Output() remove = new EventEmitter<Item>();
+  @Output() update = new EventEmitter<Item>();
 
+  updateItemValor(){
+    this.item.feito = !this.item.feito;
+    this.update.emit();
+  }
 }
