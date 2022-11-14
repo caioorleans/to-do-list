@@ -58,4 +58,9 @@ export class AppComponent {
     this.allItems.splice(this.allItems.indexOf(item),1);
     this.saveList();
   }
+
+  excluirLocalStorage(){
+    this.allItems = [];
+    this.storageService.deleteData(todoListStorageKey);
+  }
 }

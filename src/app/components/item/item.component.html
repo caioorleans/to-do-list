@@ -6,7 +6,7 @@
     [checked]="item.feito"
     (click)="updateItemValor()"
     />
-    <label [for]="item.descricao" [ngClass]="item.feito ? 'item-feito' : ''">{{item.descricao}}</label>
+    <label [for]="item.descricao" [ngClass]="item.feito ? 'item-feito' : 'item-nao-feito'">{{item.descricao}}</label>
   </div>
 
   <div class="container__delete-button">

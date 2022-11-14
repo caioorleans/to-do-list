@@ -16,4 +16,8 @@
       <app-item (update)="updateItem(item)" (remove)="removeItem(item)" [item]="item"></app-item>
     </li>
   </ul>
+
+  <div *ngIf="allItems.length > 0" class="container__excluir">
+    <button (click)="excluirLocalStorage()">Remover armazenamento local</button>
+  </div>
 </div>

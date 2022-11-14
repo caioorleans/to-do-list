@@ -26,6 +26,9 @@
 .container__checkbox label{
   background-color: transparent;
   color:black;
+}
+
+.item-nao-feito{
   font-weight: bold;
 }
 
