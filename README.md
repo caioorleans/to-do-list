@@ -1,4 +1,4 @@
-# App: To do lisy
+# App: To do list
 ## Uma das minhas primeiras aplicações Angular, no qual criei para exercitar alguns conceitos básicos da ferramenta
 ## Além disso, a aplicação faz uso do local storage, de forma que sua lista de afazeres fica salva no navegador para ser consultada posteriormente
 
